@@ -1,0 +1,18 @@
+// Aqui vamos a recoger las pocas declaraciones que hagamos con Tailwind
+
+@layer base {
+  body {
+    @apply grid grid-flow-col grid-cols-[1fr_minmax(0px,1000px)_1fr];
+  }
+
+  a {
+    @apply text-morado hover:text-naranja;
+  }
+}
+
+@layer components {
+  .card {
+    @apply w-[275px] rounded-md border border-black/20 p-2 shadow-[0_8px_16px_0_rgba(0,0,0,0.15)];
+  }
+}
+
